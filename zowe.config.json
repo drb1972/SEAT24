@@ -1,0 +1,158 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "zosmf": {
+            "type": "zosmf",
+            "properties": {
+                "port": 449
+            },
+            "secure": []
+        },
+        "tso": {
+            "type": "tso",
+            "properties": {
+                "account": "41000000",
+                "codePage": "1047",
+                "logonProcedure": "CATSO"
+            },
+            "secure": []
+        },
+        "ssh": {
+            "type": "ssh",
+            "properties": {
+                "port": 22
+            },
+            "secure": []
+        },
+        "cics": {
+            "type": "cics",
+            "properties": {},
+            "secure": []
+        },
+        "db2": {
+            "type": "db2",
+            "properties": {},
+            "secure": []
+        },
+        "ims": {
+            "type": "ims",
+            "properties": {},
+            "secure": []
+        },
+        "mq": {
+            "type": "mq",
+            "properties": {},
+            "secure": []
+        },
+        "zftp": {
+            "type": "zftp",
+            "properties": {
+                "port": 21,
+                "secureFtp": true
+            },
+            "secure": []
+        },
+        "zmf": {
+            "type": "zmf",
+            "properties": {},
+            "secure": []
+        },
+        "ops": {
+            "type": "ops",
+            "properties": {},
+            "secure": []
+        },
+        "endevor": {
+            "type": "endevor",
+            "properties": {
+                "port": 7080,
+                "protocol": "http"
+            },
+            "secure": []
+        },
+        "endevor-location": {
+            "type": "endevor-location",
+            "properties": {
+                "instance": "NDVRWEBS",
+                "environment": "DEV",
+                "system": "FINANCE",
+                "subsystem": "ACCTREC",
+                "type": "*",
+                "stageNumber": "1",
+                "maxrc": 8
+            },
+            "secure": []
+        },
+        "fmp": {
+            "type": "fmp",
+            "properties": {
+                "port": 5194,
+                "protocol": "http"
+            },
+            "secure": []
+        },
+        "ca7": {
+            "type": "ca7",
+            "properties": {},
+            "secure": []
+        },
+        "caview": {
+            "type": "caview",
+            "properties": {},
+            "secure": []
+        },
+        "jclcheck": {
+            "type": "jclcheck",
+            "properties": {
+                "port": 7554,
+                "basePath": "cajclcheck/api/v1",
+                "jclcheckOptions": "NOAS NOJCL NORES NOSIGN"
+            },
+            "secure": []
+        },
+        "base": {
+            "type": "base",
+            "properties": {
+                "host": "mstrsvw.lvn.broadcom.net",
+                "rejectUnauthorized": false
+            },
+            "secure": [
+                "user",
+                "password"
+            ]
+        },
+        "ebg": {
+            "type": "ebg",
+            "properties": {
+                "protocol": "https",
+                "host": "",
+                "port": 0
+            },
+            "secure": [
+                "user",
+                "token"
+            ]
+        }
+    },
+    "defaults": {
+        "zosmf": "zosmf",
+        "tso": "tso",
+        "ssh": "ssh",
+        "cics": "cics",
+        "db2": "db2",
+        "ims": "ims",
+        "mq": "mq",
+        "zftp": "zftp",
+        "zmf": "zmf",
+        "ops": "ops",
+        "endevor": "endevor",
+        "endevor-location": "endevor-location",
+        "fmp": "fmp",
+        "ca7": "ca7",
+        "caview": "caview",
+        "jclcheck": "jclcheck",
+        "base": "base",
+        "ebg": "ebg"
+    },
+    "autoStore": true
+}
